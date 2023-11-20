@@ -1,0 +1,6 @@
+compile mps program and valid-checker:
+    $make
+run the mps program:
+    $./bin/mps inputs/<input file name> outputs/<output file name>
+run the valid-check program:
+    $./bin/valid-check inputs/<input file name> outputs/<output file name>
