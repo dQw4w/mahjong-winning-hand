@@ -1,5 +1,8 @@
 # Mahjong Winning Hand Algorithm
 
+## Author
+B11901095 電機二 朱振瑀
+
 ## Problem 
 
 Design an efficient algorithm to determine whether a Mahjong Hand is a "Winning Hand". The input contains 'n' in the first line (indicating input size), and 'n' positive unsorted integers following, each representing the value of a tile (different tiles can have the same values). Assume that all integers are no larger than 'm'. A "Winning Mahjong Hand" is a hand such that all tiles can be formed into one pair (two tiles of the same value) and several menzis. A menzi can be a straight (three tiles with consecutive values, e.g., 3,4,5) or triplet (three tiles with the same value, e.g., 13,13,13). Every tile has to be used.
