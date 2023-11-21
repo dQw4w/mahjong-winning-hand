@@ -9,14 +9,14 @@ OPTFLAGS = -O2
 # -O2 option is for optimized version
 
 
-all	: bin/mps
+all	: bin/mj
 	@echo -n ""
 
 
 # optimized version
-bin/mps	:  main.o lib | bin
-			$(CC) $(OPTFLAGS)  main.o -ltm_usage -Llib -o bin/mps
-main.o 	: src/main.cpp src/mst.h lib/tm_usage.h | bin
+bin/mj	:  main.o lib | bin
+			$(CC) $(OPTFLAGS)  main.o -ltm_usage -Llib -o bin/mj
+main.o 	: src/main.cpp lib/tm_usage.h | bin
 			$(CC) $(CFLAGS) $< -Ilib -o $@
 bin :
 	mkdir -p bin

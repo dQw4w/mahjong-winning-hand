@@ -21,13 +21,14 @@ bool isWinningHand(int tileCount, map<int,int>tileMap){
             int remainingIterations = (tileCount - 2)/3;
             for (auto it = copiedMap.begin(); it != copiedMap.end(); ++it) {
                 int idx = it->first;
-                while (it->second > 0){
+                while (it->second >= 3){
                     if (it->second >= 3){
                         it->second -= 3;
                         remainingIterations--;
-                        continue;
                     }
-                    if (copiedMap[idx] && copiedMap[idx+1] && copiedMap[idx+2]){
+                }
+                while (it->second > 0){
+                    if (copiedMap[idx+1] && copiedMap[idx+2]){
                         copiedMap[idx] --; 
                         copiedMap[idx+1] --; 
                         copiedMap[idx+2] -- ;
